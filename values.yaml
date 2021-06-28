@@ -1,18 +1,19 @@
 ---
-loki:
-  enabled: true
+loki-stack:
+    loki:
+        enabled: true
 
-promtail:
-  enabled: true
+    promtail:
+        enabled: true
 
-grafana:
-  enabled: true
-  sidecar:
-    datasources:
-      enabled: true
-  image:
-    tag: 7.5.9
+    grafana:
+        enabled: true
+        sidecar:
+            datasources:
+                enabled: true
+        image:
+            tag: 7.5.9
 
-prometheus:
-  enabled: true
+    prometheus:
+        enabled: true
 
